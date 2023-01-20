@@ -53,7 +53,7 @@ $product_list_f = Product::where([['status', '=', 1], ['price_sale', '!=', 0]])
             <div class="col-md-10 col-12 mx-auto mt-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./index.html" class="text-bl_gr">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="index.php" class="text-bl_gr">Trang chủ</a></li>
                         <li class="breadcrumb-item active-main" aria-current="page"><?= $title ?></li>
                     </ol>
                 </nav>
@@ -228,7 +228,7 @@ $product_list_f = Product::where([['status', '=', 1], ['price_sale', '!=', 0]])
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <?php foreach ($list_product as $product) : ?>
                             <div class="col-md-2 col-6">
-                                <div class="card h-100 text-center shadow-product">
+                                <div class="card h-100 text-center shadow-product port">
                                     <div class="card-header">
                                         <img src="public/images/product/<?= $product->image ?>" class="card-img-top img-product img-md-product-2x img-fluid rounded mx-auto d-block" alt="<?= $product->image ?>">
                                     </div>
@@ -289,8 +289,8 @@ $product_list_f = Product::where([['status', '=', 1], ['price_sale', '!=', 0]])
                     <!-- 1 -->
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <?php foreach ($list_product_b as $product) : ?>
-                            <div class="col-md-2 col-6">
-                                <div class="card text-center shadow-product">
+                            <div class="col-md-2 col-6 ">
+                                <div class="card text-center shadow-product port">
                                     <div class="card-header">
                                         <img src="public/images/product/<?= $product->image ?>" class="card-img-top img-product img-md-product-2x img-fluid rounded mx-auto d-block" alt="<?= $product->image ?>">
                                     </div>

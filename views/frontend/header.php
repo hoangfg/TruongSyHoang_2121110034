@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="public/css/layoutsite.css">
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="public/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="public/assets/owlcarousel/assets/owl.theme.default.min.css">
-
+    
     <!-- javascript -->
-
+    
     <script src="public/assets/vendors/jquery.min.js"></script>
-
+    
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script src="public/assets/owlcarousel/owl.carousel.js"></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0" nonce="AHIeceBH"></script>
+    <link rel="stylesheet" href="public/css/layoutsite.css">
 </head>
 
 <body>
@@ -118,7 +118,7 @@
                                                 </button>
                                                 <ul class="dropdown-menu row ">
                                                     <li class=" my-2 "><a class="dropdown-item  bg-wh_gr " href="index.php?option=customer"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>Thành viên</a></li>
-                                                    <li class=" my-2 "><a class="dropdown-item  bg-wh_gr " href="index.php?option=customer-logout"><i class="fas fa-save me-2"></i> Đăng xuất</a></li>
+                                                    <li class=" my-2 "><a class="dropdown-item  bg-wh_gr " href="index.php?option=customer-logout"><i class="fas fa-save me-2"></i>Đăng xuất</a></li>
 
 
                                                 </ul>
@@ -129,10 +129,7 @@
                                         <div class="btn-group float-end me-3 py-1" role="group" aria-label="Basic outlined example">
                                             <button type="button" class="btn mt-md-2">
                                                 <a href="index.php?option=cart-content" title="Thêm vào giỏ" class=" m-auto"><i class="fs-3 btn btn-bg-green fa-solid fa-cart-plus"></i></a>
-                                                <span class="position-absolute bottom-10 start-500 translate-middle badge rounded-pill bg-warning">
-                                                    0+
-                                                    <span class="visually-hidden">unread</span>
-                                                </span>
+                                                
 
                                             </button>
 

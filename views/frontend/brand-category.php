@@ -29,7 +29,7 @@ $total = Product::where('status', '=', 1)
             <div class="col-md-10 col-12 mx-auto">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./index.html" class="text-bl_gr">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="index.php" class="text-bl_gr">Trang chủ</a></li>
                         <li class="breadcrumb-item active-main" aria-current="page"><?= $title ?></li>
                     </ol>
                 </nav>

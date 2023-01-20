@@ -34,13 +34,13 @@ if (isset($_SESSION['logincustomer'])) {
             <div class="card col-md-10 mx-auto">
                 <form action="index.php?option=customer" method="post">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <div class="text-center">
                                 <?php if ($customer->image == '') : ?>
                                     <?php if ($customer->gender == 0) : ?>
-                                        <img src="public/images/user/male.png" class="card-img-top index-img" alt="male">
+                                        <img src="public/images/user/male.png" class="card-img-top index-img " alt="male" style="height: 530px;">
                                     <?php else : ?>
-                                        <img src="public/images/user/female.png" class="card-img-top index-img" alt="female">
+                                        <img src="public/images/user/female.png" class="card-img-top index-img " alt="female" style="height: 530px;">
 
                                     <?php endif; ?>
                                 <?php else : ?>
@@ -48,7 +48,7 @@ if (isset($_SESSION['logincustomer'])) {
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-md-6 mx-auto">
+                        <div class="col-md-8 mx-auto">
 
                             <div class="my-3">
                                 <input type="hidden" name="id" value="<?= $customer->id ?>">

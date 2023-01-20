@@ -291,6 +291,7 @@ body {
   font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
 
   border-radius: var(--bs-card-border-radius);
+  z-index: 100;
 }
 
 .port {

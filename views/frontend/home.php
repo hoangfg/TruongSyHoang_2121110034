@@ -48,7 +48,7 @@ $metadesc = "";
                                                     <?php if (($product->price_sale == null) || ($product->price_sale == $product->price)) $index = 0;
                                                     else $index = 1; ?>
                                                     <?php if ($index == 1) : ?>
-                                                        <div style="max-height: 55px; max-width: 40px;" class="product-sale position-absolute top-0 end-0 bg-danger">
+                                                        <div style="max-height: 55px; max-width: 44px;" class="product-sale position-absolute top-0 end-0 bg-danger">
                                                             <div class="product-sale__small">off</div>
                                                             <span><strong> <?= (int)(((($product->price) - ($product->price_sale)) / ($product->price)) * 100) ?> %</strong></span>
                                                         </div>

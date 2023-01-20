@@ -9,18 +9,17 @@ $topic = Topic::where([['slug', '=', $slug], ['status', '=', 1]])->first();
 $title = $topic['name'];
 $metakey = $topic['metakey'];
 $metadesc = $topic['metadesc'];
-$limit = 12;
+$limit = 1;
 $page = Pagination::pageCurrent();
 $skip = Pagination::pageOffset($page, $limit);
-$list_post = Post::where('status', '=', 1)
-    ->where('topic_id', $topic['id'])
-    ->orderBy('created_at', 'desc')
-    ->skip($skip)
-    ->take($limit)
-    ->get();
-$total = Post::where('status', '=', 1)
-    ->where('topic_id', $topic['id'])
-    ->count();
+$list_post = Post::where([
+    ['type', '=', 'post'], ['status', '=', '1'], ['topic_id', '=', $topic->id]
+])->orderBy('created_at', 'desc')
+    ->skip($skip)->take($limit)->get();
+$total = Post::where([
+    ['type', '=', 'post'],
+    ['status', '=', '1'], ['topic_id', '=', $topic->id]
+])->count();
 ?>
 <?php require_once('./views/frontend/header.php') ?>
 <section class="mycontent py-5 bg-white">
@@ -29,7 +28,7 @@ $total = Post::where('status', '=', 1)
             <div class="col-md-10 col-12 mx-auto">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./index.html" class="text-bl_gr">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="index.php" class="text-bl_gr">Trang chủ</a></li>
                         <li class="breadcrumb-item active-main" aria-current="page"><?= $title ?></li>
                     </ol>
                 </nav>
